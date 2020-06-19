@@ -11,14 +11,14 @@ unless File.exist?('node_modules/govuk-frontend/govuk/all.scss')
 end
 
 Gem::Specification.new do |spec|
-  spec.name          = "govuk_tech_docs"
+  spec.name          = "planetrics_tech_docs"
   spec.version       = GovukTechDocs::VERSION
-  spec.authors       = ["Government Digital Service"]
-  spec.email         = ["govuk-dev@digital.cabinet-office.gov.uk"]
+  spec.authors       = ["Planetrics"]
+  spec.email         = ["os@planetrics.com"]
 
-  spec.summary       = %q{Gem to distribute the GOV.UK Tech Docs Template}
-  spec.description   = %q{Gem to distribute the GOV.UK Tech Docs Template. See https://github.com/alphagov/tech-docs-gem for the project.}
-  spec.homepage      = "https://github.com/alphagov/tech-docs-gem"
+  spec.summary       = %q{Gem to distribute the Planetrics Tech Docs Template}
+  spec.description   = %q{Gem to distribute the Planetrics Tech Docs Template. See https://github.com/vividcrt/tech-docs-gem for the project.}
+  spec.homepage      = "https://github.com/vividcrt/tech-docs-gem"
   spec.license       = "MIT"
 
   files_in_git = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
